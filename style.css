@@ -1,125 +1,156 @@
-.recipe_bg{
-    background-color: #f3e6d8ff;
-    padding:50px;
-    
+* {
+  box-sizing: border-box;
 }
 
-.recipe_card{
-    background-color: #ffffff;
-    padding:20px;
-    border-width: 0px;
-    border-radius: 10px;
-    width: 50%;
-    height:scroll;
-
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3e5d8 !important;
+  font-family: 'Outfit', sans-serif;
+  color: #5f574e;
 }
 
-.img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+/* Outer layout wrapper */
+.recipe_bg {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 16px;
+  background-color: #f3e5d8 !important;
 }
 
-.recipe_title{
-    font-family: "Young Serif",serif;
-    font-size: 30px;
-    font-weight: 800;
-    margin-top:20px;
-    color:#302d2cff;
-}
-
-.recipe_description{
-    font-family: 'outfit';
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 10px;
-    color:#5f574eff;
-}
-
-section{
-    font-family:young-serif;
-    
-    
-}
-
-.prep-time{
-    font-family: 'outfit';
-    font-size: 15px;
-    font-weight: 400;
-    background-color: #f8f6f5;
-    padding: 2ch;
-    border-radius: 10px;
-}
-    
-.preperation_Title{
-    font-family: 'outfit';
-    font-size: 18px;
-    font-weight: 700;
-    margin-top: 20px;
-    color:#7b284fff;
-    list-style-type: none;
-}
-
-prep-time span {
-  font-weight: 700;
-  color: var(--color-wenge-brown);
-}
-
-.sub_Title{
-    font-size:26px;
-    font-weight: 700;
-    margin-top: 20px;
-    color:#854632ff;
-}
-
-ul{
-    color:#5f574eff;
-    
-}
-td{
-    color:#5f574eff;
-}
-
-ul li::marker {
-  color: #854632; /* Brown / Nutmeg accent color */
-}
-
-/* 2. Number color and bold style (for Instructions list) */
-ol li::marker {
-  color: #854632; /* Brown / Nutmeg accent color */
-  font-weight: 700;
-}
-
-/* 3. Prep-time section bullet color (matches the berry title) */
-.prep-time ul li::marker {
-  color: #7b284f;
-}
-
-.nutrition-table {
+/* White card */
+.recipe_card {
+  background-color: #ffffff !important;
   width: 100%;
-  border-collapse: collapse; /* Collapses borders into single thin lines */
-  margin-top: 16px;
+  max-width: 736px;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+/* Hero image */
+.img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Main title */
+.recipe_title {
+  font-family: 'Young Serif', serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: #312e2c;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.recipe_description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5f574e;
+  margin-bottom: 32px;
+}
+
+/* Pink prep box */
+.prep-time {
+  background-color: #fff7fb;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 32px;
+}
+
+.preparation_title, .preperation_Title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #7a284e;
+  margin-bottom: 16px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.prep-time ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.prep-time li {
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+
+.prep-time li::marker {
+  color: #7a284e;
+}
+
+/* Subheadings */
+.sub_title, .sub_Title {
+  font-family: 'Young Serif', serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #854632;
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
+ul li, ol li {
+  padding-left: 12px;
+  margin-bottom: 8px;
+}
+
+ul li::marker, ol li::marker {
+  color: #854632;
+  font-weight: 700;
+}
+
+/* Dividers */
+/* Dividers */
+hr.divider,
+.divider {
+  border: none !important;
+  border-top: 1px solid #e3deda !important;
+  opacity: 1 !important;
+  width: 100% !important;
+  margin: 32px 0 !important;
+  display: block !important;
 }
 
 .nutrition-table td {
-  padding: 14px 32px; /* Generous top/bottom and left/right spacing */
-  border-bottom: 1px solid hsl(30, 18%, 87%); /* Only thin horizontal dividing lines */
+  padding: 12px 24px;
+  border-bottom: 1px solid #e3deda !important;
 }
 
-/* Remove the line under the final row */
+/* Nutrition Table */
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.nutrition-table td {
+  padding: 12px 24px;
+  border-bottom: 1px solid #e3deda;
+}
+
 .nutrition-table tr:last-child td {
   border-bottom: none;
 }
 
-/* Left label column */
 .nutrient-name {
-  color: hsl(30, 10%, 34%);
+  color: #5f574e;
   width: 50%;
 }
 
-/* Right value column */
 .nutrient-value {
-  color: hsl(14, 45%, 36%); /* Brownish/nutmeg accent color */
+  color: #854632;
   font-weight: 700;
   width: 50%;
 }

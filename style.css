@@ -1,0 +1,125 @@
+.recipe_bg{
+    background-color: #f3e6d8ff;
+    padding:50px;
+    
+}
+
+.recipe_card{
+    background-color: #ffffff;
+    padding:20px;
+    border-width: 0px;
+    border-radius: 10px;
+    width: 50%;
+    height:scroll;
+
+}
+
+.img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.recipe_title{
+    font-family: "Young Serif",serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top:20px;
+    color:#302d2cff;
+}
+
+.recipe_description{
+    font-family: 'outfit';
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 10px;
+    color:#5f574eff;
+}
+
+section{
+    font-family:young-serif;
+    
+    
+}
+
+.prep-time{
+    font-family: 'outfit';
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #f8f6f5;
+    padding: 2ch;
+    border-radius: 10px;
+}
+    
+.preperation_Title{
+    font-family: 'outfit';
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    color:#7b284fff;
+    list-style-type: none;
+}
+
+prep-time span {
+  font-weight: 700;
+  color: var(--color-wenge-brown);
+}
+
+.sub_Title{
+    font-size:26px;
+    font-weight: 700;
+    margin-top: 20px;
+    color:#854632ff;
+}
+
+ul{
+    color:#5f574eff;
+    
+}
+td{
+    color:#5f574eff;
+}
+
+ul li::marker {
+  color: #854632; /* Brown / Nutmeg accent color */
+}
+
+/* 2. Number color and bold style (for Instructions list) */
+ol li::marker {
+  color: #854632; /* Brown / Nutmeg accent color */
+  font-weight: 700;
+}
+
+/* 3. Prep-time section bullet color (matches the berry title) */
+.prep-time ul li::marker {
+  color: #7b284f;
+}
+
+.nutrition-table {
+  width: 100%;
+  border-collapse: collapse; /* Collapses borders into single thin lines */
+  margin-top: 16px;
+}
+
+.nutrition-table td {
+  padding: 14px 32px; /* Generous top/bottom and left/right spacing */
+  border-bottom: 1px solid hsl(30, 18%, 87%); /* Only thin horizontal dividing lines */
+}
+
+/* Remove the line under the final row */
+.nutrition-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Left label column */
+.nutrient-name {
+  color: hsl(30, 10%, 34%);
+  width: 50%;
+}
+
+/* Right value column */
+.nutrient-value {
+  color: hsl(14, 45%, 36%); /* Brownish/nutmeg accent color */
+  font-weight: 700;
+  width: 50%;
+}
